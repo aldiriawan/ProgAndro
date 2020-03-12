@@ -10,11 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.helloworld.Home;
-import com.example.helloworld.R;
-import com.example.helloworld.SignUp;
-
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     EditText ptEmail;
     EditText ptPassword;
@@ -24,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         ptEmail = findViewById(R.id.ptEmail);
         ptPassword = findViewById(R.id.ptPassword);
         btnLogin = findViewById(R.id.btnLogin);
@@ -33,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         tvDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SignUp.class);
+                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),
                         "Login Sukses !", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this, Home.class);
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
