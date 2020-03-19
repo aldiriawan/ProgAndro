@@ -1,3 +1,4 @@
-Sudah saya push dan merge ke master hasil update latihan fragment berdasarkan revisi di Excel.
+Hari Jumat, jam 01.22
+Saya sudah push ke Merge untuk latihan Shared Preferences.
 
 Terimakasih
