@@ -1,4 +1,4 @@
-Hari Jumat, jam 01.22
-Saya sudah push ke Merge untuk latihan Shared Preferences.
+Hari Jumat, jam 01.01
+Saya sudah push ke Master untuk latihan Intent, Broadcast, dan Notifications.
 
 Terimakasih
