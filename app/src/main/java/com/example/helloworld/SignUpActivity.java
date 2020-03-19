@@ -36,7 +36,7 @@ public class SignUpActivity extends AppCompatActivity {
                 String password1 = ptPassword1.getText().toString();
                 String password2 = ptPassword2.getText().toString();
                 if (email.equals("") || password1.equals("") || password2.equals("")) {
-                    Toast.makeText(getApplicationContext(), "Fields Are Empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Fields Are Empty !", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     if (password1.equals(password2)) {
@@ -44,11 +44,11 @@ public class SignUpActivity extends AppCompatActivity {
                         if (checkEmail == true) {
                             Boolean insert = databaseHelper.insert(email, password1);
                             if (insert == true) {
-                                Toast.makeText(getApplicationContext(), "Register Successfully", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Register Success !", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else {
-                            Toast.makeText(getApplicationContext(), "Email Already Exists", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Email Already Exists !", Toast.LENGTH_SHORT).show();
                         }
                         Toast.makeText(getApplicationContext(), "Click Login Here", Toast.LENGTH_SHORT).show();
                     }

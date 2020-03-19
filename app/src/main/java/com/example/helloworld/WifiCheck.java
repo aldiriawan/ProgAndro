@@ -15,26 +15,22 @@ public class WifiCheck extends Application {
         super.onCreate();
         createNotification();
     }
-
     private void createNotification() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel on = new NotificationChannel(
                     onWiFi,
                     "WiFi is Turned On",
-                    NotificationManager.IMPORTANCE_HIGH);//importance high diprioritas tingkat tinggi
+                    NotificationManager.IMPORTANCE_HIGH);
             on.setDescription("WiFi is Turned On");
-
             NotificationChannel off = new NotificationChannel(
                     offWiFi,
                     "WiFi is Turned Off",
                     NotificationManager.IMPORTANCE_LOW);
             off.setDescription("WiFi is Turned Off");
-
             NotificationManager manager = getSystemService(NotificationManager.class);
             assert manager != null;
             manager.createNotificationChannel(on);
             manager.createNotificationChannel(off);
         }
     }
-
 }

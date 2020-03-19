@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 passwordMasuk = password.getText().toString();
                 Boolean checkEmailPass = databaseHelper.emailPassword(emailMasuk, passwordMasuk);
                 if (checkEmailPass==true){
-                    Toast.makeText(getApplicationContext(), "Login Succesfully !", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Login Success !", Toast.LENGTH_SHORT).show();
                     SharedPreferences preferences = getSharedPreferences(LOGIN_PREF, MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putString(REMEMBER_PREF, "true");
