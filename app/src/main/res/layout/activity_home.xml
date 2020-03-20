@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <Button
+        android:id="@+id/startJob"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="START JOB"
+        android:onClick="scheduleJob"/>
+
+    <Button
+        android:id="@+id/cancelJob"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="CANCEL JOB"
+        android:onClick="cancelJob"/>
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

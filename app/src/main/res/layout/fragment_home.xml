@@ -7,6 +7,32 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.PlaceholderFragment">
 
+    <Button
+        android:id="@+id/startJob"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="scheduleJob"
+        android:text="START JOB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <Button
+        android:id="@+id/cancelJob"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="cancelJob"
+        android:text="CANCEL JOB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="@+id/startJob"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
     <TextView
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
