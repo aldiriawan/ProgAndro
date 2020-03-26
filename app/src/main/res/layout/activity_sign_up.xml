@@ -8,6 +8,7 @@
     android:background="@color/colorPrimaryDark"
     app:tabMode="scrollable">
 
+
     <EditText
         android:id="@+id/ptEmail"
         android:layout_width="206dp"

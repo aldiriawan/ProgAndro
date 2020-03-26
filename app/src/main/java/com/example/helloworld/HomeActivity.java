@@ -23,10 +23,6 @@ import static com.example.helloworld.WifiCheck.onWiFi;
 public class HomeActivity extends AppCompatActivity {
     private View view;
     private NotificationManagerCompat notificationManagerCompat;
-    private static final String TAG = "Activities";
-    private Button btnStartJob;
-    private Button btnCancelJob;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager);
         notificationManagerCompat = NotificationManagerCompat.from(this);
 
-        btnStartJob = findViewById(R.id.startJob);
-        btnCancelJob = findViewById(R.id.cancelJob);
+
     }
     private MyBroadcastReceiver receiver = new MyBroadcastReceiver() {
 
@@ -86,26 +81,5 @@ public class HomeActivity extends AppCompatActivity {
                 .build();
         notificationManagerCompat.notify(2,notification);
     }
-    public void scheduleJob(View view){
-        ComponentName componentName = new ComponentName(getApplicationContext(), MyJobService.class);
-        JobInfo info = new JobInfo.Builder(123, componentName)
-                .setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED)
-                .setPersisted(true)
-                .setPeriodic(15 * 60 * 1000) // tiap 15 menit
-                .build();
 
-        JobScheduler scheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
-        int resultCode = scheduler.schedule(info);
-        if(resultCode == JobScheduler.RESULT_SUCCESS){
-            Log.i(TAG, "scheduleJob = Job Scheduled");
-        } else {
-            Log.i(TAG, "scheduleJob: Job scheduling failed");
-        }
-    }
-
-    public void cancelJob(View view){
-        JobScheduler scheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
-        scheduler.cancel(123);
-        Log.i(TAG,"cancelJob");
-    }
 }

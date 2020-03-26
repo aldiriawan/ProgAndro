@@ -6,19 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/startJob"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="START JOB"
-        android:onClick="scheduleJob"/>
 
-    <Button
-        android:id="@+id/cancelJob"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="CANCEL JOB"
-        android:onClick="cancelJob"/>
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -40,12 +28,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary" />
-    </com.google.android.material.appbar.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+       />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
