@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.helloworld.Home;
 import com.example.helloworld.HomeActivity;
+//import com.example.helloworld.Profile;
 import com.example.helloworld.Profile;
 import com.example.helloworld.R;
 
