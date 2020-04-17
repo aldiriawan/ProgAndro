@@ -1,4 +1,4 @@
-Hari Jumat, jam 22:11
-Saya sudah push ke Master untuk latihan kelas MyJobService
+Hari Jumat, jam 3.43
+Saya sudah push ke Master untuk latihan Recycler View
 
 Terimakasih
