@@ -25,8 +25,8 @@ public class Home extends Fragment {
     private static final String TAG = "Activities";
     private Button btnStartJob;
     private Button btnCancelJob;
-    //btnStartJob = findViewById(R.id.startJob);
-    //btnCancelJob = findViewById(R.id.cancelJob);
+//    btnStartJob = findViewById(R.id.startJob);
+//    btnCancelJob = findViewById(R.id.cancelJob);
 
     public static Home newInstance() {
         Home home = new Home();

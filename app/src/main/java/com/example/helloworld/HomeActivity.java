@@ -81,5 +81,4 @@ public class HomeActivity extends AppCompatActivity {
                 .build();
         notificationManagerCompat.notify(2,notification);
     }
-
 }
