@@ -1,4 +1,4 @@
-Hari Jumat, jam 3.43
-Saya sudah push ke Master untuk latihan Recycler View
+Jumat, 17 April 2020 jam 18.50
+Sudah saya Push Tugas Mingguan terkait Firebase
 
 Terimakasih
