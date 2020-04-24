@@ -1,4 +1,4 @@
-Jumat, 17 April 2020 jam 18.50
-Sudah saya Push Tugas Mingguan terkait Firebase
+Jumat, 24 April 2020 jam 21.36
+Sudah saya Push Tugas Mingguan terkait Komponen Perangkat Keras
 
 Terimakasih
