@@ -35,10 +35,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return CameraFragment.newInstance();
-            case 1:
                 return Home.newInstance();
-            case 2:
+            case 1:
                 return Profile.newInstance();
             default:
                 return null;
